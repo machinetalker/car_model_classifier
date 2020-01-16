@@ -19,7 +19,7 @@ if __name__ == '__main__':
     class_names = cars_meta['class_names']  # shape=(1, 196)
     class_names = np.transpose(class_names)
 
-    test_path = 'c/users/hp'
+    test_path = 'c/users/hp/sample_img'
     test_images = [f for f in os.listdir(test_path) if
                    os.path.isfile(os.path.join(test_path, f)) and f.endswith('.jpg')]
 
